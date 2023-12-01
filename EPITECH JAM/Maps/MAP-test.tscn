@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bdeyec3qkcvkw"]
 
-[ext_resource type="Texture2D" uid="uid://b8ip5484vjvx7" path="res://Maps/Feet-City/1.png" id="1_48sup"]
+[ext_resource type="Texture2D" uid="uid://b8ip5484vjvx7" path="res://Maps/Feet-City/1.png" id="1_4o6oo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_exqe0"]
 size = Vector2(964, 38)
@@ -10,7 +10,7 @@ size = Vector2(964, 38)
 [node name="1" type="Sprite2D" parent="."]
 position = Vector2(959, 540)
 scale = Vector2(2, 2)
-texture = ExtResource("1_48sup")
+texture = ExtResource("1_4o6oo")
 
 [node name="FLOOR" type="StaticBody2D" parent="."]
 collision_layer = 2
@@ -56,4 +56,4 @@ editor_draw_drag_margin = true
 [node name="2" type="Sprite2D" parent="."]
 visible = false
 scale = Vector2(2, 2)
-texture = ExtResource("1_48sup")
+texture = ExtResource("1_4o6oo")
