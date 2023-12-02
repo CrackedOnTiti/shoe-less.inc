@@ -11,6 +11,13 @@ var dash_duration = 10
 var landing_frames = 0
 var lag_frames = 0
 var jump_squat = 3
+var fastfall = false
+
+#Onready Variables
+onready var GroundL = get_node('Raycasts/GroundL')
+onready var GroundR = get_node('Raycasts/GroundR')
+onready var states = $States
+onready var anim = $Sprite/AnimationPlayer
 
 #FOX's main attributes
 var RUNSPEED = 340
@@ -30,9 +37,6 @@ var ROLL_DISTANCE = 350
 var AIR_DODGE_SPEED = 500
 var UP_B_LAUNCHSPEED = 700
 
-onready var states = $States
-
-
 func updateframes(delta):
 	frame += 1
 
@@ -46,6 +50,9 @@ func turn(direction):
 
 func _frame():
 	frame = 0
+
+func play_animation(animation_name):
+    anim.play(animation_name)
 
 func _ready():
 	pass
